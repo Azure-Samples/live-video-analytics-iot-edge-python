@@ -15,12 +15,6 @@ This file is a deployment manifest template that has the following modules defin
 
 Besides the modules already defined in deployment.template.json, this deployment manifest template references the [yolov3 module](https://github.com/Azure/live-video-analytics/tree/master/utilities/video-analysis/yolov3-onnx) that hosts the YoloV3 ONNX model with http server.
 
-<<<<<<< HEAD
-### deployment.grpcyolov3icpu.template.json
-This deployment manifest changes the consumed yolov3 service over the previous. It uses a gRPC enabled yolov3 module, instead of a pure HTTP one, as in the previous case.
-
-=======
->>>>>>> Minor adjustments
 ### deployment.objectCounter.template.json
 
 Besides the modules already defined in deployment.yolov3.template.json, this deployment manifest template references the sample objectCounter module (source code for which can be found in ./modules/objectCounter). This template also has message routes defined to send messages from the lvaEdge module to the objectCounter module and vice versa, to enable the scenario of recording video clips when objects of a specified type and above a specified threshold value are found.
