@@ -21,7 +21,7 @@ class GraphManager:
 
         self.device_id = config['deviceId']
         self.module_id = config['moduleId']
-        self.api_version = '1.0'
+        self.api_version = '2.0'
 
         self.registry_manager = IoTHubRegistryManager(config['IoThubConnectionString'])
 

@@ -94,7 +94,11 @@
                                         "max-file": "10"
                                       }
                                   },        
-                                  "IpcMode": "container:lvaEdge"
+                                  "IpcMode": "container:lvaEdge",
+                                  "Binds": [
+                                    "$VIDEO_OUTPUT_FOLDER_ON_DEVICE:/var/media/",
+                                    "$APPDATA_FOLDER_ON_DEVICE:/var/lib/azuremediaservices"
+                                  ]
                               },
                               "Env":[
                                   "grpcBinding=tcp://0.0.0.0:5001",
@@ -153,3 +157,4 @@
         }
     }
   }
+  
